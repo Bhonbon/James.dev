@@ -101,6 +101,7 @@ body {
   }
   .nav-links.active {
     width: 100%;
+    background-color: #04040b;
   }
 }
 
