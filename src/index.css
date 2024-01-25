@@ -82,7 +82,8 @@ body {
     height: 100vh;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
-    background-color: #fff;
+    background-color: var(--accent);
+    color: #fff;
   }
   .nav-links ul li{
     margin-right: unset;
@@ -244,10 +245,4 @@ body {
 .nav-links li a.dark {
   cursor: pointer;
   color: white;
-}
-
-@media screen and (max-width:768px) {
-  .nav-links.dark {
-    background-color: #04040b;
-  }
 }
