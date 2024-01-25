@@ -101,7 +101,6 @@ body {
   }
   .nav-links.active {
     width: 100%;
-    background-color: #04040b;
   }
 }
 
@@ -247,3 +246,8 @@ body {
   color: white;
 }
 
+@media screen and (max-width:768px) {
+  .nav-links.dark {
+    background-color: #04040b;
+  }
+}

@@ -11,17 +11,20 @@ const ToggleButton = () => {
         const navbar = document.getElementById('navbar')
         const col = document.querySelector('.col')
         const col2 = document.getElementById('col')
+        const navLinks = document.querySelector('.nav-links')
         if (darkMode) {
             document.body.classList.add('dark')
             navbar.classList.add('dark')
             col.classList.add('dark')
             col2.classList.add('dark')
+            navLinks.classList.add('dark')
         } else {
             document.body.classList.remove('dark')
             document.body.classList.add('light')
             navbar.classList.remove('dark')
             col.classList.remove('dark')
             col2.classList.remove('dark')
+            navLinks.classList.remove('dark')
         }
         const json = JSON.stringify(darkMode)
         localStorage.setItem('dark-mode', json)
