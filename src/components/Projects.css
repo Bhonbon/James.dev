@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+
+#projects {
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+#projects .title {
+    margin-bottom: 40px;
+    font-family: 'Lemon', 'Poppins', monospace;
+    font-weight: 100;
+    text-align: center;
+}
+
+#projects img {
+    max-width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+.project-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    background: #fff;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(255, 248, 248, 0.1) 0px 0px 5px 0px, rgba(187, 177, 177, 0.1) 0px 0px 1px 0px;
+    max-width: 22%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 198, 198);
+}
+.col:hover {
+    box-shadow: rgba(89, 144, 187, 0.3) 0px 1px 2px 0px, rgba(138, 204, 255, 0.15) 0px 2px 6px 2px;
+    transform: scale(1.05); 
+    text-decoration: 1px solid steelblue underline;
+}
+
+.col span {
+    border: none;
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-family: 'Poppins';
+    padding: 4%;
+    padding: 20px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+@media screen and (max-width:768px) {
+    #projects .title {
+        font-size: 0.8em;
+        padding-right: 30px;
+        border: none;
+    }
+    .project-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col {
+        max-width: 80%;
+    }
+}
+.terms {
+    position: absolute;
+    top: 290%;
+    width: 0px;
+    background: #fff;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.terms.active {
+    width: 50%;
+}
+.blogs {
+    position: absolute;
+    right: 0;
+    top: 290%;
+    width: 0px;
+    background: #070606;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.blogs.active2 {
+    width: 50%;
+}

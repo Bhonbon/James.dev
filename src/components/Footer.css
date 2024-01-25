@@ -1,0 +1,21 @@
+.footer {
+    height: 20vh;
+    border-top: 1px solid rgb(241, 236, 236);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.footer h1 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+}
+.footer p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+.details {
+    text-align: justify;
+}

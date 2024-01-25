@@ -1,0 +1,140 @@
+:root {
+    --background : #333;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#skills .title {
+    font-family: 'Lemon', 'Poppins', monospace;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+.skills-option {
+    display: flex;
+    gap: 10px;
+}
+.skills-option img {
+    max-width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: ease 0.2s;
+} 
+.skills-option img:hover {
+    border: none;
+    transform: scale(1.2);
+}
+#skills-display {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    height: 55vh;
+    font-weight: 500;
+}
+#skills-display img {
+    filter: blur(0);
+    max-width: 100%;
+    height: 70%;
+    float: right;
+    padding: 10px;
+}
+#skills-display p:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 2s steps(30, end);
+}
+#skills-display p:nth-child(2) {
+    overflow: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    animation: type2 2s steps(30, end) forwards;
+    animation-delay: 2s;
+}
+#skills-display p:nth-child(3) {
+    overflow: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    animation: type3 2s steps(30, end) forwards;
+    animation-delay: 4s;
+}
+#skills-display p:nth-child(3)::after { 
+    content: "";
+    border-right: .15em solid orange;
+    margin-left: 4px;
+    animation: blinking-cursor .5s step-end infinite;
+}
+@keyframes type {
+    from { 
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes blinking-cursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+@keyframes type2 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 5;
+        width: 100%;
+    }
+}
+@keyframes type3 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 5;
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px) {
+    #skills .title {
+        font-size: 1.5em;
+        text-align: center;
+        border: none;
+        padding-right: 20px;
+    }
+    .skills-option {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .skills-option img {
+        max-width: 100%;
+        height: 70px;
+    }
+    #skills-display{
+        font-size: 0.8em;
+        display: none;
+    }
+    #skills {
+        height: 40vh;
+    }
+}
+
