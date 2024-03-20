@@ -11,9 +11,9 @@ const Terms = () => {
         <div className='web-terms'>
             <li>TERMS-Traffic Enforcement Reporting Management System Login Form</li>
             <img src={terms1} alt="" />
-            <li>Main Form - dashboard for reports of accident reports send by the mobile user. If the admin click the button 'Click as Done', the reports will auto compile into accident form dashboard</li>
+            <li>Main Form - dashboard for reports of accident reports send by the mobile user. If the admin click the button Click as Done, the reports will auto compile into accident form dashboard</li>
             <img src={terms3} alt="" />
-            <li>The system have 3 main reports dashboard consists of spot, accident, and development report of PNP Traffic and here's the example of dashboard</li>
+            <li>The system have 3 main reports dashboard consists of spot, accident, and development report of PNP Traffic and heres the example of dashboard</li>
             <img src={terms4} alt="" />
             <div className='mobile-terms'>
               <div className='mobile'>

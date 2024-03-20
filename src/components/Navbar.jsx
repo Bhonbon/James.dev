@@ -14,8 +14,11 @@ const toggleNavbar = () => {
 }
 const location = useLocation();
 if (location.pathname === '/blogs' || location.pathname === '/terms') {
+    document.body.style.overflow = 'hidden'
     return null;
-} 
+} else {
+    document.body.style.overflow = 'scroll'
+}
 
   return (
     <nav className='navbar' id="navbar">

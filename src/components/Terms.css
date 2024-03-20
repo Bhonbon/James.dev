@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: visible;
+    overflow: scroll;
 }
 .web-terms {
     position:absolute;
@@ -23,6 +23,7 @@
     align-items: center;
     width: 100%;
     border: none;
+    overflow: auto;
 }
 .web-terms img {
     max-width: 100%;
