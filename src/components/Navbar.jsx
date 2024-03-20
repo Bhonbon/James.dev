@@ -14,7 +14,6 @@ const toggleNavbar = () => {
 }
 const location = useLocation();
 if (location.pathname === '/blogs' || location.pathname === '/terms') {
-    document.body.style.overflow = 'hidden'
     return null;
 } 
 
